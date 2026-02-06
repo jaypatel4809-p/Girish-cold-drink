@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Girish Cold Drinks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#eef3f9;
+}
+
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:30px 18px;
+  margin:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+h1,h2,h3{
+  color:#0d47a1;
+  text-align:center;
+}
+
+p{
+  color:#333;
+}
+
+/* Products */
+.products{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.product{
+  background:#f6f9ff;
+  border-radius:16px;
+  padding:16px;
+}
+
+.product img{
+  width:100%;
+  height:auto;
+  border-radius:12px;
+  display:block;
+}
+
+.price{
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+}
+
+.btn{
+  display:block;
+  background:#0d6efd;
+  color:#fff;
+  padding:12px;
+  border-radius:10px;
+  text-decoration:none;
+  text-align:center;
+  margin-top:10px;
+}
+
+.location a{
+  display:block;
+  text-align:center;
+  margin:10px 0;
+  color:#0d47a1;
+  text-decoration:none;
+}
+
+/* Desktop */
+@media(min-width:768px){
+  .products{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .product{
+    width:260px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="card">
+  <h1>Girish Cold Drinks</h1>
+  <p style="text-align:center;">Refreshing Taste • Premium Quality</p>
+</div>
+
+<!-- ABOUT -->
+<div class="card">
+  <h2>About Us</h2>
+  <p>
+    Girish Cold Drinks is a trusted cold drink shop in Ahmedabad,
+    serving refreshing and hygienic beverages prepared with
+    quality ingredients and consistent taste.
+  </p>
+</div>
+
+<!-- PRODUCTS -->
+<div class="card">
+  <h2>Our Products</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://i.postimg.cc/q7NWFTxt/IMG-3682.jpg">
+      <h3>Cold Coffee</h3>
+      <p>Smooth and creamy cold coffee made with chilled milk.</p>
+      <div class="price">₹80</div>
+      <a class="btn" href="#">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.postimg.cc/J4hxxQQd/IMG-3683.jpg">
+      <h3>Chocolate Shake</h3>
+      <p>Rich chocolate shake loved by all age groups.</p>
+      <div class="price">₹90</div>
+      <a class="btn" href="#">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.postimg.cc/65Sr0xqz/IMG-3684.jpg">
+      <h3>Mango Shake</h3>
+      <p>Fresh mango flavor blended with milk.</p>
+      <div class="price">₹100</div>
+      <a class="btn" href="#">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.postimg.cc/sX6Qg5Z1/IMG-3685.jpg">
+      <h3>Oreo Shake</h3>
+      <p>Creamy Oreo shake with crunchy texture.</p>
+      <div class="price">₹110</div>
+      <a class="btn" href="#">Order Now</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- LOCATION -->
+<div class="card location">
+  <h2>Find Us</h2>
+  <a href="https://maps.google.com/?q=Girish+Cold+Drinks+Ahmedabad">Google Maps</a>
+  <a href="https://maps.apple.com/?q=Girish+Cold+Drinks+Ahmedabad">Apple Maps</a>
+</div>
+
+<!-- FOOTER -->
+<div class="card">
+  <h2>Thanks For Visiting ❤️</h2>
+  <p style="text-align:center;">We look forward to serving you!</p>
+</div>
+
+</body>
+</html>
